@@ -8,12 +8,12 @@ This is an individual assessment. All work must be your own. Your challenge scor
 
 ## Project Set Up
 
-- [ ] Create a forked copy of this project.
-- [ ] Clone your OWN version of the repository. (Not Lambda's by mistake!)
-- [ ] Implement the project in a new branch: `git checkout -b <firstName-lastName>`.
-- [ ] Create and push commits regularly: `git push origin <firstName-lastName>`.
-- [ ] Do not move or rename any of the existing files or folders.
-- [ ] Do not remove any scripts from the `package.json` but you may add new ones.
+- [x] Create a forked copy of this project.
+- [x] Clone your OWN version of the repository. (Not Lambda's by mistake!)
+- [x] Implement the project in a new branch: `git checkout -b <firstName-lastName>`.
+- [x] Create and push commits regularly: `git push origin <firstName-lastName>`.
+- [x] Do not move or rename any of the existing files or folders.
+- [x] Do not remove any scripts from the `package.json` but you may add new ones.
 
 ## Project Instructions
 
@@ -102,6 +102,17 @@ There are two possible ways to submit this project to Canvas. Lambda Staff will 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain the difference between Relational Databases and SQL.
+
+relational database is a data base created with tables and columns. SQL is what it is used to communicate, and interact with the data in the database.
+
 2. Why do tables need a Primary Key?
+
+its a unique way to identify each table row
+
 3. What is the name given to a table column that references the Primary Key on another table?
+
+Foreign key
+
 4. What do we need in order to have a _many to many_ relationship between two tables?
+
+a shared foreign key
