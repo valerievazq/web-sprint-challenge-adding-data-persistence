@@ -25,4 +25,22 @@ router.post("/", (req, res) => {
     });
 });
 
+router.get("/:id/resources", (req, res, next) => {
+  const { id } = req.params;
+  project
+    .resourcesByProject(id)
+    .then((resource) => {
+      if (resource.length) {
+        res.json(resource);
+      } else {
+        res
+          .status(404)
+          .json({ message: "Could not find the requested resource" });
+      }
+    })
+    .catch((err) => {
+      res.status(500).json({ message: "Failed to get resources" });
+    });
+});
+
 module.exports = router;
